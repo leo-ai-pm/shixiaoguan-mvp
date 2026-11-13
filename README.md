@@ -1,6 +1,6 @@
-# 试销官 MVP
+# 试销官
 
-面向永嘉中小鞋企的 AI + OPC 新品快反决策与实验编排应用。MVP 用一条可回放、可测试、可审计的合成数据闭环，演示男士轻量休闲鞋深灰蓝/米白两个配色的单变量试销决策：
+面向永嘉中小鞋企的 AI + OPC 新品快反决策与实验编排应用。通过一条可回放、可测试、可审计的合成数据闭环，演示男士轻量休闲鞋深灰蓝/米白两个配色的单变量试销决策：
 
 ```text
 Product Brief → 实验计划审批 → 模拟试销 → 数据质检
@@ -43,7 +43,7 @@ pnpm dev
 
 线上评审版：[https://xiaohao-ai.github.io/shixiaoguan-mvp/](https://xiaohao-ai.github.io/shixiaoguan-mvp/)
 
-本项目采用 [MIT License](./LICENSE) 开源，贡献方式与安全报告边界见 [CONTRIBUTING.md](./CONTRIBUTING.md) 和 [SECURITY.md](./SECURITY.md)。`main` 分支通过检查后由 GitHub Actions 自动发布到 GitHub Pages，不需要 Render 账号、服务器或模型 Key。
+开发协作与安全报告说明见 [CONTRIBUTING.md](./CONTRIBUTING.md) 和 [SECURITY.md](./SECURITY.md)。`main` 分支通过检查后由 GitHub Actions 自动发布到 GitHub Pages，不需要 Render 账号、服务器或模型 Key。
 
 GitHub Pages 只托管静态文件，因此线上评审版在浏览器内运行固定 `SYNTHETIC` 场景回放，并把当前演示进度保存在本浏览器；它不连接 FastAPI、SQLite 或 DeepSeek，不接受图片附件，也不能承载真实企业或个人数据。清理站点数据会重置演示。本地运行仍是完整的 Next.js＋FastAPI＋SQLite 版本，并可按上文选择 DeepSeek 在线模式。
 
